@@ -2,26 +2,35 @@
 
 exports[`Should show count with no total for no expenses 1`] = `
 <div>
-  <p>
-    Viewing 0 expenses
-  </p>
+  <h1>
+    Viewing 
+    0
+     
+    expenses
+  </h1>
 </div>
 `;
 
 exports[`Should show total for multiple expenses 1`] = `
 <div>
-  <p>
-    Viewing 3 expenses
+  <h1>
+    Viewing 
+    3
+     
+    expenses
      totalling $1,141.95
-  </p>
+  </h1>
 </div>
 `;
 
 exports[`Should show total for single expense 1`] = `
 <div>
-  <p>
-    Viewing 1 expenses
+  <h1>
+    Viewing 
+    1
+     
+    expense
      totalling $1.95
-  </p>
+  </h1>
 </div>
 `;

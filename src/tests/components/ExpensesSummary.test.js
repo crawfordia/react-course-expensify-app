@@ -6,7 +6,7 @@ import expenses from '../fixtures/expenses';
 let wrapper;
 
 beforeEach(() => {
-    wrapper = shallow(<ExpensesSummary expenses={[]}/>)
+    wrapper = shallow(<ExpensesSummary expenseCount={0} expenseTotal={0} />)
 })
 
 test('Should show count with no total for no expenses', () => {
@@ -15,7 +15,8 @@ test('Should show count with no total for no expenses', () => {
 
 test('Should show total for single expense', () => {
     wrapper.setProps({
-        expenses: [expenses[0]]
+        expenseCount: 1,
+        expenseTotal: 195
     });
 
     expect(wrapper).toMatchSnapshot();
@@ -23,7 +24,8 @@ test('Should show total for single expense', () => {
 
 test('Should show total for multiple expenses', () => {
     wrapper.setProps({
-        expenses
+        expenseCount: 3,
+        expenseTotal: 114195
     });
 
     expect(wrapper).toMatchSnapshot();
