@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should show count with no total for no expenses 1`] = `
+<div>
+  <p>
+    Viewing 0 expenses
+  </p>
+</div>
+`;
+
+exports[`Should show total for multiple expenses 1`] = `
+<div>
+  <p>
+    Viewing 3 expenses
+     totalling $1,141.95
+  </p>
+</div>
+`;
+
+exports[`Should show total for single expense 1`] = `
+<div>
+  <p>
+    Viewing 1 expenses
+     totalling $1.95
+  </p>
+</div>
+`;
